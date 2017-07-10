@@ -16,7 +16,7 @@ node {
    //run command
    //C:\\Program Files (x86)\\Jenkins\\workspace\\JenkinsCopy\\README.md
   // echo ${JENKINS_HOME}
-   shell "C:/Program Files (x86)/Jenkins/workspace/JenkinsCopy Copy ReadMe.Md D:/AWS"
+   shell "${JENKINS_HOME}/workspace/JenkinsCopy Copy README.md D:/AWS"
    echo "Done"
    //step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
 }
