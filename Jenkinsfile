@@ -15,8 +15,8 @@ node {
  // sh "${mvnHome}/bin mvn -Dmaven.test.failure.ignore clean package"
    //run command
    //C:\\Program Files (x86)\\Jenkins\\workspace\\JenkinsCopy\\README.md
-   echo ${JENKINS_HOME}
-   command "${JENKINS_HOME}/workspace/JenkinsCopy Copy ReadMe.Md D:/AWS"
+   echo %JENKINS_HOME%
+   command "%JENKINS_HOME%/workspace/JenkinsCopy Copy ReadMe.Md D:/AWS"
    echo "Done"
    //step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
 }
