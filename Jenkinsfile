@@ -13,6 +13,6 @@ node {
    stage 'CopyingFiles'
    // Run the maven build
  // sh "${mvnHome}/bin mvn -Dmaven.test.failure.ignore clean package"
-   cp "C:\\Program Files (x86)\\Jenkins\\workspace\\jenkins_pipeline_java_maven_\\README.md" "D:\\AWS"
+   sh cp "C:\\Program Files (x86)\\Jenkins\\workspace\\jenkins_pipeline_java_maven_\\README.md" "D:\\AWS"
    //step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
 }
