@@ -18,7 +18,7 @@ node {
   // echo ${JENKINS_HOME}
 //   shell "${JENKINS_HOME}/workspace/JenkinsCopy Copy README.md D:/AWS"
 //    bat "Copy "C:/Program Files (x86)/Jenkins/workspace/JenkinsCopy/README.md" "D:/AWS" "
-       bat "Copy README.md D:\AWS" 
+       bat "Copy README.md D:\\AWS" 
 
 //bat "mvn -Dmaven.test.failure.ignore clean package"
    echo "Done"
