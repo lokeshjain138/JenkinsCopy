@@ -2,7 +2,7 @@ node {
    // Mark the code checkout 'stage'....
    stage 'Checkout'
    
-   git url: 'https://github.com/lokeshjain138/Jenkins_Pipeline_Maven_New.git'
+   git url: 'https://github.com/lokeshjain138/JenkinsCopy.git'
 
    // Get the maven tool.
    // ** NOTE: This 'M3' maven tool must be configured
@@ -10,8 +10,9 @@ node {
    def mvnHome = tool 'M3'
 
    // Mark the code build 'stage'....
-   stage 'Build'
+   stage 'CopyingFiles'
    // Run the maven build
-   sh "${mvnHome}/bin mvn -Dmaven.test.failure.ignore clean package"
+ // sh "${mvnHome}/bin mvn -Dmaven.test.failure.ignore clean package"
+   cp "C:\Program Files (x86)\Jenkins\workspace\JenkinsCopy\READ.MD" "D:\AWS"
    //step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
 }
